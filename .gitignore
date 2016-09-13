@@ -3,8 +3,10 @@
 /.idea/workspace.xml
 /.idea/libraries
 .DS_Store
-/out
-/generated
+/TestProject/out
+/TestProject/generated
 /captures
-/.idea
+/TestProject/.idea
+/AnnotationProcessing/.idea
+/AnnotationProcessing/out
 *.log
