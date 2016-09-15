@@ -7,6 +7,8 @@
 /TestProject/generated
 /captures
 /TestProject/.idea
+/TestProject/target
 /AnnotationProcessing/.idea
 /AnnotationProcessing/out
+/AnnotationProcessing/target
 *.log

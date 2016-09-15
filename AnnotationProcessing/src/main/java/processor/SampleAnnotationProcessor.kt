@@ -29,15 +29,13 @@ class SampleAnnotationProcessor() : AbstractProcessor() {
                 throw ProcessingException(annotatedElement, "Only classes can be annotated with @%s",
                         SampleAnnotation::class.java.simpleName)
             }
-            val typeElement: TypeElement = annotatedElement as TypeElement
+            val typeElement = annotatedElement as TypeElement
             throw ProcessingException(typeElement, "Successfully got type element @%s", typeElement.simpleName)
         }
         return true
     }
 
-    override fun getSupportedSourceVersion(): SourceVersion? {
-        return SourceVersion.latestSupported()
-    }
+    override fun getSupportedSourceVersion(): SourceVersion? = SourceVersion.latestSupported()
 
     override fun getSupportedAnnotationTypes(): MutableSet<String>? {
         val annotations: MutableSet<String> = HashSet()
